@@ -1,4 +1,4 @@
-# Session Review - 2026-04-10
+# Session Review - 2026-04-10 Evening
 
 ## 今日 Learnings
 
@@ -10,7 +10,7 @@
 
 ### 2. 飞书会话和 webchat 会话不共享 context
 - 今天在飞书里讨论了 awesome-openclaw-skills、skill 安装优先级排序
-- 但当前 webchat 会话里没有这段记忆
+- 但当前 webchat 会话里没有那段记忆
 - 跨 channel 的会话 history 需要单独读取文件
 - **需要改进**：每次新会话开始时，主动检查是否有其他 channel 的重要内容
 
@@ -46,5 +46,5 @@
 ---
 
 ## 待更新文件
-- [ ] MEMORY.md：补充「日历名称问题已解决」
-- [ ] TOOLS.md：记录日历名称「日历」
+- [x] MEMORY.md：补充「日历名称问题已解决」
+- [x] TOOLS.md：记录日历名称「日历」

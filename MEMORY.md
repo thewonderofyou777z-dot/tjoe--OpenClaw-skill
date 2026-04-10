@@ -364,8 +364,49 @@ Rate limit: ~10 req/s下单
 - 中文 macOS 日历名称是「日历」
 - skill 默认填的 "Calendar" 不匹配
 
+## 2026-04-10 新增
+
+### session-wrap-up skill 完成
+- 自己写了个简化版：`~/.openclaw/skills/session-wrap-up/`
+- Phase 1（Git）用 shell 脚本自动化
+- Phase 2-4 由理查直接做
+- 今天是第一次正式跑，21 个文件 commit
+
+### 飞书+webchat 会话不共享 context
+- 跨 channel 的会话 history 需要单独读文件
+- 首次会话应主动检查其他 channel 的重要内容
+
+### 日历名称问题（已解决）
+- 中文 macOS 日历名称是「日历」
+- skill 默认填的 "Calendar" 不匹配
+
+### YouTube Digest 配置完成
+- API key 已获取并保存到钥匙串
+- 追踪频道：ATHLEAN-X / JeffNippard / ChrisBumstead / 3Blue1Brown / LexFridman / CryptoGorilla / Polymarket
+- 免费方案（YouTube Data API v3）已测试
+
+### RSS 新闻源扩展
+- 14个新政治/国际新闻源加入 tech-news-digest
+- Reuters / BBC / Al Jazeera / NY Times / The Guardian / FT China / Politico 等
+
+### GitHub Push 配置完成
+- 仓库：thewonderofyou777z-dot/tjoe--OpenClaw-skill
+- Token 存钥匙串（HTTPS 认证）
+- 今日 65 个文件 push 成功
+
+### Cron Jobs 修复完成
+- Polymarket警报检查：timeout 300s，脚本路径修正
+- 小Joe每日简报：发到飞书，timeout 600s
+- 蛋白质追踪：路径修正（~ → /Users/tjoere）
+
+### 营养记录更新
+- 身高更正：174cm（不是170cm）
+- 蛋白质目标建议：140g/天（不是200g）
+- 碳水目标：490g（缺口较大，今日仅141g）
+
 ## 待处理
 - [ ] 辅助功能权限（Terminal → 系统设置 → 辅助功能）
 - [ ] Mem0 接入记忆系统
 - [ ] Polymarket Agentic RAG
 - [ ] 简报多代理架构
+- [ ] 身高体重记录更新到 USER.md

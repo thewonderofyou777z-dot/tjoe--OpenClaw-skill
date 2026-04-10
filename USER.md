@@ -2,7 +2,7 @@
 
 _Learn about the person you're helping. Update this as you go._
 
-- **Name:** 小Joe
+- **Height/Weight:** 174cm / ~70kg
 - **What to call them:** 小Joe
 - **Pronouns:** _(optional)_
 - **Timezone:** Asia/Shanghai (GMT+8)
