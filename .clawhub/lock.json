@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "skills": {
+    "reflexion": {
+      "version": "1.0.1",
+      "installedAt": 1775552462936
+    },
+    "arc-memory-pruner": {
+      "version": "1.1.0",
+      "installedAt": 1775557381813
+    },
+    "polymarket-trade": {
+      "version": "1.0.6",
+      "installedAt": 1775739058286
+    },
+    "self-improving-agent": {
+      "version": "3.0.13",
+      "installedAt": 1775651345791
+    },
+    "ontology": {
+      "version": "1.0.4",
+      "installedAt": 1775651354177
+    },
+    "nutrition": {
+      "version": "1.0.0",
+      "installedAt": 1775654368252
+    },
+    "summarize-pro": {
+      "version": "1.0.0",
+      "installedAt": 1775655736203
+    },
+    "polymarket-api": {
+      "version": "1.0.0",
+      "installedAt": 1775739053804
+    },
+    "morning-daily-briefing": {
+      "version": "1.0.0",
+      "installedAt": 1775738153359
+    },
+    "macos-calendar": {
+      "version": "1.2.0",
+      "installedAt": 1775738178350
+    },
+    "ranked-gym": {
+      "version": "1.0.0",
+      "installedAt": 1775738196867
+    },
+    "ai-daily-briefing": {
+      "version": "1.0.0",
+      "installedAt": 1775738221564
+    },
+    "skill-vetter": {
+      "version": "1.0.0",
+      "installedAt": 1775739156739
+    }
+  }
+}

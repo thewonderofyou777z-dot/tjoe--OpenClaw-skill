@@ -348,6 +348,22 @@ Rate limit: ~10 req/s下单
 - ClawHub 可疑 Skill 不轻易装（VirusTotal 标记）
 - 钥匙串密码绝对不能给
 
+## 2026-04-10 新增
+
+### session-wrap-up skill 完成
+- 自己写了个简化版：`~/.openclaw/skills/session-wrap-up/`
+- Phase 1（Git）用 shell 脚本自动化
+- Phase 2-4 由理查直接做
+- 今天是第一次正式跑，21 个文件 commit
+
+### 飞书+webchat 会话不共享 context
+- 跨 channel 的会话 history 需要单独读文件
+- 首次会话应主动检查其他 channel 的重要内容
+
+### 日历名称问题（已解决）
+- 中文 macOS 日历名称是「日历」
+- skill 默认填的 "Calendar" 不匹配
+
 ## 待处理
 - [ ] 辅助功能权限（Terminal → 系统设置 → 辅助功能）
 - [ ] Mem0 接入记忆系统

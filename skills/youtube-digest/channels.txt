@@ -1,0 +1,14 @@
+# YouTube Digest Channels
+# Format: @handle|subscriber_count|category
+
+# Fitness (订阅量最高2个)
+@ATHLEAN-X|14200000|fitness
+@JeffNippard|8310000|fitness
+
+# AI (订阅量最高2个)
+@3Blue1Brown|8250000|ai
+@LexFridman|4970000|ai
+
+# Polymarket (订阅量最高2个)
+@CryptoGorilla|76500|polymarket
+@Polymarket|3380|polymarket
