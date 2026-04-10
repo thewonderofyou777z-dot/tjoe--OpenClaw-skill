@@ -221,3 +221,47 @@ The goal: Be helpful without being annoying. Check in a few times a day, do usef
 ## Make It Yours
 
 This is a starting point. Add your own conventions, style, and rules as you figure out what works.
+
+---
+
+## 📝 文档排版规范（理查版）
+
+### 表格设计
+- 使用 Markdown 表格
+- 列对齐：内容靠左，数字靠右
+- 超过 4 列考虑拆分
+- 示例：
+  ```markdown
+  | 项目 | 状态 | 风险 | 备注 |
+  |------|------|------|------|
+  | task | ✅ done | 🟡 mid | note |
+  ```
+
+### 标题层级
+- `#` 一级标题：报告/页面标题
+- `##` 二级标题：板块标题
+- `###` 三级标题：子板块
+- 避免超过 3 级
+
+### 列表
+- 无序列表用 `-` 而非 `*`
+- 任务列表用 `- [ ]` / `- [x]`
+- 每项不超过 2 行
+
+### 分隔
+- 用 `---` 分隔大板块
+- 用空行分隔不同内容块
+
+### Emoji 使用
+- ✅ 🟢 表示正面/完成
+- ❌ 🔴 表示负面/问题
+- ⚠️ 🟡 表示警告/中风险
+- 🎯 📊 表示数据/指标
+- 每个列表项最多 1 个 emoji
+
+### 颜色标注（风险等级）
+- 🟢 低风险 / 安全
+- 🟡 中风险 / 注意
+- 🔴 高风险 / 拒绝
+- ⚫ 极高风险 / 危险操作
+
