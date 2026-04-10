@@ -111,6 +111,8 @@ The `capture.sh` hook fires after every Bash tool use. It reads the tool output 
 {
   "id": "RFX-20260331-a7f",
   "type": "error",
+  "source": "error-discovery",
+  "category": "bug-fix",
   "trigger": "npm ERR! Missing script: \"build\"",
   "context": "npm run build",
   "resolution": "",
@@ -175,6 +177,53 @@ This step is agent-driven (via prompt instruction), not hook-automated, to avoid
 | `correction` | User says "no", "actually", "wrong" | "Actually use pnpm, not npm" |
 | `insight` | Non-obvious solution discovered | "Must run codegen after API changes" |
 | `pattern` | Recurring approach that works | "Always check auth status before git push" |
+
+## Sources
+
+Every entry tracks **where the learning came from** (`source` field):
+
+| Source | When to use |
+|--------|-------------|
+| `error-discovery` | Auto-captured from command failure (default for hook captures) |
+| `user-correction` | User explicitly corrected you ("No, that's wrong...", "Actually...") |
+| `successful-pattern` | You discovered something that works particularly well |
+| `user-feedback` | User gave feedback that improved your behavior |
+| `api-discovery` | API docs or experimentation revealed unexpected behavior |
+
+## Categories
+
+Each entry can be tagged with a `category` for filtering and analysis:
+
+| Category | Use for |
+|----------|--------|
+| `bug-fix` | Solutions to errors and bugs (default for auto-captured errors) |
+| `technique` | Working methods, approaches, strategies |
+| `best-practice` | Recommended patterns and standards |
+| `api-endpoint` | API-specific behaviors, quirks, requirements |
+| `constraint` | Limits, boundaries, restrictions |
+| `error-handling` | How to handle specific types of errors |
+| `workflow` | Process and workflow improvements |
+
+**Example — tagging a manual entry:**
+```bash
+# When user corrects you — tag as user-correction + technique
+cat > .reflexion/entries/RFX-$(date +%Y%m%d)-abc.json << 'EOF'
+{
+  "id": "RFX-20260410-abc",
+  "type": "correction",
+  "source": "user-correction",
+  "category": "technique",
+  "trigger": "User said: 'Actually, I prefer Chinese responses'",
+  "context": "Responding in English by default",
+  "resolution": "Always respond in Chinese unless user explicitly asks for English",
+  "keywords": ["language", "chinese", "preference"],
+  "occurrences": 1,
+  "first_seen": "2026-04-10",
+  "last_seen": "2026-04-10",
+  "promoted": false
+}
+EOF
+```
 
 ## Data Format
 
@@ -273,8 +322,9 @@ reflexion/
 │   ├── capture.sh           # PostToolUse hook - auto-capture errors
 │   ├── recall.sh            # UserPromptSubmit hook - inject past learnings
 │   ├── promote.sh           # Auto-promote recurring patterns to CLAUDE.md
-│   ├── status.sh            # Learning stats dashboard
-│   └── rebuild-index.sh     # Rebuild keyword index from entries
+│   ├── status.sh            # Learning stats dashboard (with source/category breakdown)
+│   ├── rebuild-index.sh     # Rebuild keyword index from entries
+│   └── export.sh            # Export learnings to JSON for sharing/backup
 ├── assets/
 │   └── settings-template.json  # Claude Code settings template
 └── references/
