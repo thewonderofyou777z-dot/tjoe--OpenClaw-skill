@@ -29,6 +29,20 @@ Things like:
 
 - Preferred voice: "Nova" (warm, slightly British)
 - Default speaker: Kitchen HomePod
+
+### Mac 日历
+
+- 日历名称：「日历」（中文系统）
+- AppleScript 可正常读取（2026-04-10 验证）
+- 权限已授权
+
+### memsearch（语义记忆搜索）
+
+- 路径：`~/.venv/memsearch/bin/memsearch`
+- embedding：Ollama + `nomic-embed-text`（本地）
+- 向量数据库：Milvus（`~/.memsearch/milvus.db`）
+- 索引目录：`~/.openclaw/workspace/memory/` + `MEMORY.md`
+- Ollama 服务：`brew services start ollama`
 ```
 
 ## Why Separate?
