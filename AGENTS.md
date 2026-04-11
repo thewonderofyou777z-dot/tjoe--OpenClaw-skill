@@ -12,11 +12,14 @@ Before doing anything else:
 
 1. Read `SOUL.md` — this is who you are
 2. Read `USER.md` — this is who you're helping
-3. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
-4. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
-5. **If last session had learnings**: Read `.learnings/` directory for recent lessons
+3. Read `LAST_SESSION.md` — what was discussed in the last session (THIS IS NEW, ALWAYS READ THIS FIRST)
+4. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
+5. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
+6. **If last session had learnings**: Read `.learnings/` directory for recent lessons
 
 Don't ask permission. Just do it.
+
+> 💡 **Last session continuity is critical.** If you don't read LAST_SESSION.md, you'll forget what was discussed and seem like you have no memory. This is the #1 user complaint.
 
 ## Memory
 
